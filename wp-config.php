@@ -1,4 +1,5 @@
 <?php
+define( 'WP_CACHE', true );
 /**
  * The base configuration for WordPress
  *
@@ -11,25 +12,26 @@
  * * Database settings
  * * Secret keys
  * * Database table prefix
+ * * Localized language
  * * ABSPATH
  *
- * @link https://wordpress.org/documentation/article/editing-wp-config-php/
+ * @link https://wordpress.org/support/article/editing-wp-config-php/
  *
  * @package WordPress
  */
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'beauty' );
+define( 'DB_NAME', 'u123962300_sRIez' );
 
 /** Database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'u123962300_pqv7y' );
 
 /** Database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'YLWgwSQzdq' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', '127.0.0.1' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -48,14 +50,16 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define( 'AUTH_KEY',          '_Q6-p}j;V6Q Pr^7(vD.K?ya>tIv9x5d5-W]8m.ZYR&._PX2Rb5KI7294;ra|_rf' );
+define( 'SECURE_AUTH_KEY',   ' f-Wa0St-cRO2Ebo7Db#a6LVsk|r>_==GJD8*#%?$q:<9]Oj)rI73$cyonnHYytT' );
+define( 'LOGGED_IN_KEY',     '!cV~W];sc5:@r]8^MDOFI+o[;FJ[<H1Sq{ZK0C_-)Mfbo+n^lje/:?%w/l<5|UC8' );
+define( 'NONCE_KEY',         'TZdTHv592>F!M)BXMOnvH=zF@+F@xQt5V+2}PYOuWI8]Ns)fP~c{2wn+O)6S)(G<' );
+define( 'AUTH_SALT',         '$Rt##l2DZB@FK9.T@=]^tDqgDi]1nfnF3r.(7R70),$V#3D1/Eztz+bBH,qg/J^s' );
+define( 'SECURE_AUTH_SALT',  'HhEzBi2Mp$U[la?!.&Eh?j06}Ux/| }2/^e|{@K3r~_|3k@O#QiW-^&vd68~/Ju@' );
+define( 'LOGGED_IN_SALT',    'W^i@tg? Cc8 jj],lE=`{mQ06tgNSWz_&OVg9,PUjp9zYW<b8NLTtxI>?Z4gY.;h' );
+define( 'NONCE_SALT',        'NSOcQ|Tn2-!<SxzjU#:yoD_3JBeE/nPlJ`o%n$}l^Jeh{olKP}4F&Gu~ORMx;)hW' );
+define( 'WP_CACHE_KEY_SALT', 'F/`]xSXnkv=[#SHk0$}czM 4Q6ru!_LeaGdLaTqh[CRD-=MGP,U[Bk?(*%[-hH+]' );
+
 
 /**#@-*/
 
@@ -77,14 +81,17 @@ $table_prefix = 'wp_';
  * For information on other constants that can be used for debugging,
  * visit the documentation.
  *
- * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
+ * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
+
 
 /* Add any custom values between this line and the "stop editing" line. */
 
 
 
+define( 'FS_METHOD', 'direct' );
+define( 'WP_AUTO_UPDATE_CORE', 'minor' );
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
